@@ -63,21 +63,67 @@ body {
     gap: 1.5rem;
 }
 
-.lang-switcher select {
+/* Custom Language Switcher */
+.lang-switcher {
+    position: relative;
+    user-select: none;
+}
+
+.custom-select {
     background-color: var(--card-bg);
-    color: var(--text-light);
     border: 1px solid var(--primary);
-    padding: 0.3rem 0.5rem;
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.9rem;
-    outline: none;
+    min-width: 80px;
+}
+
+.select-selected {
+    padding: 0.3rem 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.select-selected img, .select-items img {
+    width: 20px;
+    height: 14px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.select-items {
+    position: absolute;
+    background-color: var(--card-bg);
+    top: 110%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.select-items div {
+    padding: 0.5rem 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     transition: var(--transition);
 }
 
-.lang-switcher select:hover {
+.select-items div:hover {
     background-color: var(--primary);
     color: var(--dark-bg);
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-arrow {
+    margin-left: auto;
+    font-size: 0.7rem;
 }
 
 .hamburger {

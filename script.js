@@ -97,21 +97,49 @@ const translations = {
     }
 };
 
+const flags = {
+    en: "https://flagcdn.com/us.svg",
+    es: "https://flagcdn.com/es.svg",
+    pt: "https://flagcdn.com/br.svg"
+};
+
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- 1. LÓGICA DE IDIOMAS (i18n) ---
-    const langSelect = document.getElementById('language-select');
-    
-    // Cargar idioma guardado o usar inglés por defecto
+    // --- 1. CUSTOM LANGUAGE DROPDOWN ---
+    const langDropdown = document.getElementById('lang-dropdown');
+    const selected = langDropdown.querySelector('.select-selected');
+    const items = langDropdown.querySelector('.select-items');
+    const currentFlag = document.getElementById('current-flag');
+    const currentLangText = selected.querySelector('span');
+
+    // Load saved lang
     const savedLang = localStorage.getItem('preferredLang') || 'en';
-    langSelect.value = savedLang;
+    updateDropdownUI(savedLang);
     setLanguage(savedLang);
 
-    langSelect.addEventListener('change', (e) => {
-        const selectedLang = e.target.value;
-        setLanguage(selectedLang);
-        localStorage.setItem('preferredLang', selectedLang);
+    selected.addEventListener('click', (e) => {
+        e.stopPropagation();
+        items.classList.toggle('select-hide');
     });
+
+    items.querySelectorAll('div').forEach(item => {
+        item.addEventListener('click', () => {
+            const lang = item.getAttribute('data-value');
+            updateDropdownUI(lang);
+            setLanguage(lang);
+            localStorage.setItem('preferredLang', lang);
+            items.classList.add('select-hide');
+        });
+    });
+
+    document.addEventListener('click', () => {
+        items.classList.add('select-hide');
+    });
+
+    function updateDropdownUI(lang) {
+        currentFlag.src = flags[lang];
+        currentLangText.textContent = lang.toUpperCase();
+    }
 
     function setLanguage(lang) {
         document.querySelectorAll('[data-i18n]').forEach(element => {
@@ -120,7 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 element.textContent = translations[lang][key];
             }
         });
-        // Actualizar el atributo lang del HTML para accesibilidad
         document.documentElement.lang = lang;
     }
 
