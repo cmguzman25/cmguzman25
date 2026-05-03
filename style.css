@@ -57,6 +57,29 @@ body {
     color: var(--primary);
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.lang-switcher select {
+    background-color: var(--card-bg);
+    color: var(--text-light);
+    border: 1px solid var(--primary);
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    outline: none;
+    transition: var(--transition);
+}
+
+.lang-switcher select:hover {
+    background-color: var(--primary);
+    color: var(--dark-bg);
+}
+
 .hamburger {
     display: none;
     font-size: 1.5rem;

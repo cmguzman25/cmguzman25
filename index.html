@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -14,64 +14,74 @@
     <nav class="navbar">
         <div class="logo">CarlosG_</div>
         <ul class="nav-links">
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#about">Sobre Mí</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#home" data-i18n="nav_home">Home</a></li>
+            <li><a href="#about" data-i18n="nav_about">About</a></li>
+            <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+            <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
+        
+        <div class="nav-actions">
+            <div class="lang-switcher">
+                <select id="language-select">
+                    <option value="en">EN</option>
+                    <option value="es">ES</option>
+                    <option value="pt">PT</option>
+                </select>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Hola, soy <span class="highlight">Carlos Guzmán</span></h1>
-            <h2>Ingeniero de Datos | Big Data & Cloud</h2>
-            <p>Especialista en pipelines de datos a gran escala, arquitecturas cloud y ecosistema Big Data (Scala, Python, Spark).</p>
+            <h1><span data-i18n="hero_hi">Hi, I'm</span> <span class="highlight">Carlos Guzmán</span></h1>
+            <h2 data-i18n="hero_title">Data Engineer | Big Data & Cloud</h2>
+            <p data-i18n="hero_desc">Specialist in large-scale data pipelines, cloud architectures, and Big Data ecosystem (Scala, Python, Spark).</p>
             <div class="hero-btns">
-                <a href="#experience" class="btn btn-primary">Ver Experiencia</a>
-                <a href="#contact" class="btn btn-outline">Contáctame</a>
+                <a href="#experience" class="btn btn-primary" data-i18n="hero_btn_exp">View Experience</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="hero_btn_contact">Contact Me</a>
             </div>
         </div>
     </section>
 
     <section id="about" class="container section">
-        <h2 class="section-title">Resumen Profesional</h2>
-        <p style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.1rem; color: var(--text-gray);">
-            Ingeniero de Datos con amplia trayectoria en la construcción y optimización de pipelines de datos a gran escala. Experto en el diseño de soluciones eficientes bajo el ecosistema Big Data y plataformas cloud como AWS y Azure. Enfocado en transformar datos complejos en activos estratégicos que generen valor real para el negocio.
+        <h2 class="section-title" data-i18n="about_title">Professional Summary</h2>
+        <p data-i18n="about_p" style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.1rem; color: var(--text-gray);">
+            Data Engineer with extensive experience in building and optimizing large-scale data pipelines. Expert in designing efficient solutions within the Big Data ecosystem and cloud platforms like AWS and Azure. Focused on transforming complex data into strategic assets that generate real business value.
         </p>
     </section>
 
     <section id="experience" class="bg-light section">
         <div class="container">
-            <h2 class="section-title">Trayectoria Profesional</h2>
+            <h2 class="section-title" data-i18n="exp_title">Professional Path</h2>
             <div class="timeline">
                 <article class="project-card">
                     <div class="project-content">
-                        <h3>Ingeniero de Datos | Indra (BBVA)</h3>
+                        <h3 data-i18n="exp_indra_title">Data Engineer | Indra (BBVA)</h3>
                         <p class="tech-stack">Scala | Spark | Python | AWS | HDFS</p>
-                        <p>Desarrollo de pipelines de alto rendimiento para procesamiento de información bancaria masiva. Optimización de flujos de trabajo y reducción de tiempos de procesamiento.</p>
-                        <span class="date">2020 – Actualidad</span>
+                        <p data-i18n="exp_indra_desc">Developed high-performance pipelines for processing massive banking information. Workflow optimization and reduction of processing times.</p>
+                        <span class="date" data-i18n="exp_indra_date">2020 – Present</span>
                     </div>
                 </article>
 
                 <article class="project-card">
                     <div class="project-content">
-                        <h3>Ingeniero de Datos | Everis (NTT DATA)</h3>
+                        <h3 data-i18n="exp_everis_title">Data Engineer | Everis (NTT DATA)</h3>
                         <p class="tech-stack">Azure | Databricks | PySpark | Kafka</p>
-                        <p>Implementación de pipelines end-to-end y soluciones de procesamiento en tiempo real para el sector bancario.</p>
-                        <span class="date">2020 (Feb – Sept)</span>
+                        <p data-i18n="exp_everis_desc">Implementation of end-to-end pipelines and real-time processing solutions for the banking sector.</p>
+                        <span class="date" data-i18n="exp_everis_date">2020 (Feb – Sept)</span>
                     </div>
                 </article>
 
                 <article class="project-card">
                     <div class="project-content">
-                        <h3>Ingeniero de Datos | Bluetab (IBM Company)</h3>
+                        <h3 data-i18n="exp_bluetab_title">Data Engineer | Bluetab (IBM Company)</h3>
                         <p class="tech-stack">Scala | Spark | Python | Datio | HDFS</p>
-                        <p>Construcción de flujos de datos robustos para información financiera y automatización de procesos operativos.</p>
-                        <span class="date">2018 – 2019</span>
+                        <p data-i18n="exp_bluetab_desc">Built robust financial data flows and automation of operational processes.</p>
+                        <span class="date" data-i18n="exp_bluetab_date">2018 – 2019</span>
                     </div>
                 </article>
             </div>
@@ -79,36 +89,36 @@
     </section>
 
     <section id="skills" class="container section">
-        <h2 class="section-title">Stack Tecnológico</h2>
+        <h2 class="section-title" data-i18n="skills_title">Tech Stack</h2>
         <div class="skills-grid">
             <div class="skill-card">
                 <i class="fab fa-python"></i>
-                <h3>Lenguajes</h3>
+                <h3 data-i18n="skills_langs">Languages</h3>
                 <p>Scala, Python, SQL, Node.js</p>
             </div>
             <div class="skill-card">
                 <i class="fas fa-cloud"></i>
-                <h3>Cloud</h3>
+                <h3 data-i18n="skills_cloud">Cloud</h3>
                 <p>AWS, Azure (Databricks, Data Factory)</p>
             </div>
             <div class="skill-card">
                 <i class="fas fa-database"></i>
-                <h3>Big Data</h3>
+                <h3 data-i18n="skills_bigdata">Big Data</h3>
                 <p>Apache Spark, HDFS, Kafka, Hadoop</p>
             </div>
             <div class="skill-card">
                 <i class="fas fa-cogs"></i>
-                <h3>Principios</h3>
+                <h3 data-i18n="skills_principles">Principles</h3>
                 <p>CI/CD, Clean Architecture, SOLID, Git</p>
             </div>
         </div>
     </section>
 
     <section id="contact" class="container section">
-        <h2 class="section-title">Contacto</h2>
+        <h2 class="section-title" data-i18n="contact_title">Contact</h2>
         <div class="contact-wrapper">
             <a href="mailto:carlos.guzman.0515@gmail.com" class="contact-item">
-                <i class="fas fa-envelope"></i> Email
+                <i class="fas fa-envelope"></i> <span data-i18n="contact_email">Email</span>
             </a>
             <a href="https://wa.me/51935462416" target="_blank" class="contact-item">
                 <i class="fab fa-whatsapp"></i> WhatsApp
@@ -120,7 +130,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Carlos Guzmán. Data Engineer Portfolio.</p>
+        <p>&copy; 2024 <span data-i18n="footer_copy">Carlos Guzmán. Data Engineer Portfolio.</span></p>
     </footer>
 
     <script src="script.js"></script>
