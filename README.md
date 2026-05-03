@@ -1,15 +1,15 @@
-# Hi there! I'm Carlos Guzmán 👋
-### Data Engineer | Cloud Architecture | ETL Specialist
+# Carlos Guzmán 👋
+### Data Engineer | Big Data & Cloud Specialist
 
-I build robust and scalable data solutions to transform raw information into strategic assets. My focus is on building efficient pipelines, optimizing cloud infrastructure, and democratizing data access.
+Data Engineer with extensive experience in building and optimizing large-scale data pipelines. Expert in designing efficient solutions within the Big Data ecosystem (Scala, Python, Apache Spark) on cloud platforms (AWS/Azure). Focused on transforming complex data into strategic assets that drive business value.
 
 ---
 
-### 🚀 About Me
-- 🛠 Currently working with: **Python, Spark, Terraform, and AWS**.
-- ☁️ Specialist in **Serverless** architectures and **Data Warehousing** (Snowflake, Redshift).
-- 📈 Focused on process optimization and reducing operational costs in the cloud.
-- 📫 How to reach me: [LinkedIn](https://linkedin.com) | [Email](mailto:youremail@example.com)
+### 🚀 Professional Summary
+- **Current Role:** Data Engineer at **Indra (BBVA)**.
+- **Key Expertise:** High-performance pipelines, Distributed Systems (HDFS), and Cloud Architecture.
+- **Core Values:** Clean Architecture, SOLID principles, and CI/CD excellence.
+- **Location:** Lima, Peru.
 
 ---
 
@@ -17,26 +17,39 @@ I build robust and scalable data solutions to transform raw information into str
 
 | Category | Technologies |
 | :--- | :--- |
-| **Languages** | Python, SQL (PostgreSQL, T-SQL), Scala, Bash |
-| **Cloud & Infra** | AWS (S3, Lambda, Glue), Terraform, Docker |
-| **Big Data** | Apache Spark, Databricks, Snowflake |
-| **Orchestration** | Apache Airflow, DBT, Luigi |
+| **Languages** | Scala, Python, SQL, Node.js |
+| **Big Data** | Apache Spark, HDFS, Apache Kafka, Hadoop Ecosystem |
+| **Cloud** | AWS (Compute & Data services), Azure (Databricks, Data Factory) |
+| **Tools & Frameworks** | Git, CI/CD, Nest.js, Clean Architecture |
 
 ---
 
-### 🏗 Featured Project: Infrastructure-as-Code Portfolio
-This repository (and the website it deploys) serves as an example of **Infrastructure as Code (IaC)**. 
-- **Frontend:** HTML5, CSS3, and Vanilla JS.
-- **Backend:** S3 for static hosting.
-- **Distribution:** CloudFront with forced HTTPS and OAC for maximum security.
-- **Provisioning:** Terraform for full deployment automation.
+### 💼 Experience Highlights
+
+- **Indra (BBVA)** | *Sept 2020 – Present*
+  - Developed high-performance pipelines for banking data using Scala, Spark, and Python on AWS.
+  - Reduced data processing times through scalable solution implementation.
+- **Everis (NTT DATA)** | *Feb 2020 – Sept 2020*
+  - Implemented end-to-end pipelines on Azure using Databricks and PySpark.
+  - Developed real-time processing solutions with Kafka and Scala.
+- **Bluetab (IBM Company - BBVA)** | *July 2018 – Nov 2019*
+  - Built robust financial data flows on the Datio platform.
+  - Optimized HDFS storage and query performance.
 
 ---
 
-### 📊 GitHub Stats
-![Carlos's Stats](https://github-readme-stats.vercel.app/api?username=cmguzman25&show_icons=true&theme=tokyonight)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=cmguzman25&layout=compact&theme=tokyonight)
+### 🎓 Education & Certifications
+- **Bachelor's in Statistics** | Universidad de Oriente (UDONE), Venezuela.
+- **AWS Certified Cloud Practitioner**.
+- **Specializations:** Apache Spark 3, Scala (Rock the JVM), Generative AI for Data, SOLID & Clean Architecture.
 
 ---
 
-> "Data is the new oil, but the Data Engineer is the one who builds the refinery."
+### 📬 Connect with Me
+- **WhatsApp:** [+51 935462416](https://wa.me/51935462416)
+- **LinkedIn:** [linkedin.com/in/carlosguzmandata](https://linkedin.com/in/carlosguzmandata)
+- **Email:** [carlos.guzman.0515@gmail.com](mailto:carlos.guzman.0515@gmail.com)
+
+---
+
+> "Turning complex data into strategic assets."

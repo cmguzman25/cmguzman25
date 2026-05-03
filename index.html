@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Data Engineer</title>
+    <title>Carlos Guzmán | Data Engineer Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -12,11 +12,12 @@
 <body>
 
     <nav class="navbar">
-        <div class="logo">DataDev_</div>
+        <div class="logo">CarlosG_</div>
         <ul class="nav-links">
             <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre Mí</a></li>
+            <li><a href="#experience">Experiencia</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Proyectos</a></li>
             <li><a href="#contact">Contacto</a></li>
         </ul>
         <div class="hamburger">
@@ -26,13 +27,53 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Hola, soy <span class="highlight">Tu Nombre</span></h1>
-            <h2>Ingeniero de Datos</h2>
-            <p>Transformando datos crudos en decisiones estratégicas. Especialista en Pipelines ETL, Cloud Computing y
-                Big Data.</p>
+            <h1>Hola, soy <span class="highlight">Carlos Guzmán</span></h1>
+            <h2>Ingeniero de Datos | Big Data & Cloud</h2>
+            <p>Especialista en pipelines de datos a gran escala, arquitecturas cloud y ecosistema Big Data (Scala, Python, Spark).</p>
             <div class="hero-btns">
-                <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#experience" class="btn btn-primary">Ver Experiencia</a>
                 <a href="#contact" class="btn btn-outline">Contáctame</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container section">
+        <h2 class="section-title">Resumen Profesional</h2>
+        <p style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.1rem; color: var(--text-gray);">
+            Ingeniero de Datos con amplia trayectoria en la construcción y optimización de pipelines de datos a gran escala. Experto en el diseño de soluciones eficientes bajo el ecosistema Big Data y plataformas cloud como AWS y Azure. Enfocado en transformar datos complejos en activos estratégicos que generen valor real para el negocio.
+        </p>
+    </section>
+
+    <section id="experience" class="bg-light section">
+        <div class="container">
+            <h2 class="section-title">Trayectoria Profesional</h2>
+            <div class="timeline">
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Ingeniero de Datos | Indra (BBVA)</h3>
+                        <p class="tech-stack">Scala | Spark | Python | AWS | HDFS</p>
+                        <p>Desarrollo de pipelines de alto rendimiento para procesamiento de información bancaria masiva. Optimización de flujos de trabajo y reducción de tiempos de procesamiento.</p>
+                        <span class="date">2020 – Actualidad</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Ingeniero de Datos | Everis (NTT DATA)</h3>
+                        <p class="tech-stack">Azure | Databricks | PySpark | Kafka</p>
+                        <p>Implementación de pipelines end-to-end y soluciones de procesamiento en tiempo real para el sector bancario.</p>
+                        <span class="date">2020 (Feb – Sept)</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Ingeniero de Datos | Bluetab (IBM Company)</h3>
+                        <p class="tech-stack">Scala | Spark | Python | Datio | HDFS</p>
+                        <p>Construcción de flujos de datos robustos para información financiera y automatización de procesos operativos.</p>
+                        <span class="date">2018 – 2019</span>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -43,82 +84,43 @@
             <div class="skill-card">
                 <i class="fab fa-python"></i>
                 <h3>Lenguajes</h3>
-                <p>Python, SQL, Scala, Bash</p>
+                <p>Scala, Python, SQL, Node.js</p>
             </div>
             <div class="skill-card">
                 <i class="fas fa-cloud"></i>
-                <h3>Cloud & DevOps</h3>
-                <p>AWS, Azure, Docker, Terraform</p>
+                <h3>Cloud</h3>
+                <p>AWS, Azure (Databricks, Data Factory)</p>
             </div>
             <div class="skill-card">
                 <i class="fas fa-database"></i>
-                <h3>Big Data & DB</h3>
-                <p>Spark, PostgreSQL, Snowflake, Redshift</p>
+                <h3>Big Data</h3>
+                <p>Apache Spark, HDFS, Kafka, Hadoop</p>
             </div>
             <div class="skill-card">
                 <i class="fas fa-cogs"></i>
-                <h3>Orquestación</h3>
-                <p>Apache Airflow, DBT, Luigi</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="bg-light section">
-        <div class="container">
-            <h2 class="section-title">Proyectos Destacados</h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3>Pipeline ETL en AWS</h3>
-                        <p class="tech-stack">Python | Lambda | S3 | Redshift</p>
-                        <p>Arquitectura serverless para ingesta de datos en tiempo real. Procesamiento de logs y carga
-                            automática en Data Warehouse.</p>
-                        <a href="#" class="btn-link">Ver Código <i class="fab fa-github"></i></a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3>Análisis de Datos Masivos</h3>
-                        <p class="tech-stack">Apache Spark | Databricks | Power BI</p>
-                        <p>Procesamiento de 5TB de datos históricos para modelado predictivo de ventas. Optimización de
-                            consultas SQL en un 40%.</p>
-                        <a href="#" class="btn-link">Ver Caso de Estudio <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3>Migración de Datos On-Premise</h3>
-                        <p class="tech-stack">DBT | Snowflake | Airflow</p>
-                        <p>Migración completa de base de datos Oracle a la nube utilizando Airflow para orquestar las
-                            tareas de transformación.</p>
-                        <a href="#" class="btn-link">Ver Código <i class="fab fa-github"></i></a>
-                    </div>
-                </article>
+                <h3>Principios</h3>
+                <p>CI/CD, Clean Architecture, SOLID, Git</p>
             </div>
         </div>
     </section>
 
     <section id="contact" class="container section">
-        <h2 class="section-title">Hablemos</h2>
-        <p style="text-align: center; margin-bottom: 2rem;">¿Tienes un desafío de datos? Estoy disponible para nuevas
-            oportunidades.</p>
+        <h2 class="section-title">Contacto</h2>
         <div class="contact-wrapper">
-            <a href="mailto:tuemail@ejemplo.com" class="contact-item">
-                <i class="fas fa-envelope"></i> tuemail@ejemplo.com
+            <a href="mailto:carlos.guzman.0515@gmail.com" class="contact-item">
+                <i class="fas fa-envelope"></i> Email
             </a>
-            <a href="https://linkedin.com" target="_blank" class="contact-item">
+            <a href="https://wa.me/51935462416" target="_blank" class="contact-item">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://linkedin.com/in/carlosguzmandata" target="_blank" class="contact-item">
                 <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com" target="_blank" class="contact-item">
-                <i class="fab fa-github"></i> GitHub
             </a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Tu Nombre. Construido con código limpio.</p>
+        <p>&copy; 2024 Carlos Guzmán. Data Engineer Portfolio.</p>
     </footer>
 
     <script src="script.js"></script>
