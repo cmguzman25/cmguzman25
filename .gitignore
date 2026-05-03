@@ -1,0 +1,27 @@
+# Directorios locales de Terraform (Binarios y plugins)
+.terraform/
+
+# Archivos de Estado (State) - ¡MUY IMPORTANTE!
+*.tfstate
+*.tfstate.*
+
+# Archivos de logs de crasheos
+crash.log
+crash.log.*
+
+# Archivos de variables con datos sensibles (personalízalo según necesites)
+*.tfvars
+*.auto.tfvars
+
+# Excepciones: A veces queremos comitear un ejemplo de variables
+!example.tfvars
+
+# Archivos de configuración de anulación (Override)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Configuraciones de CLI locales de usuario
+.terraformrc
+terraform.rc

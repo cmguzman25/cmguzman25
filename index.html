@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Data Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">DataDev_</div>
+        <ul class="nav-links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hola, soy <span class="highlight">Tu Nombre</span></h1>
+            <h2>Ingeniero de Datos</h2>
+            <p>Transformando datos crudos en decisiones estratégicas. Especialista en Pipelines ETL, Cloud Computing y
+                Big Data.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#contact" class="btn btn-outline">Contáctame</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container section">
+        <h2 class="section-title">Stack Tecnológico</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Lenguajes</h3>
+                <p>Python, SQL, Scala, Bash</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud & DevOps</h3>
+                <p>AWS, Azure, Docker, Terraform</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>Big Data & DB</h3>
+                <p>Spark, PostgreSQL, Snowflake, Redshift</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-cogs"></i>
+                <h3>Orquestación</h3>
+                <p>Apache Airflow, DBT, Luigi</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-light section">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Pipeline ETL en AWS</h3>
+                        <p class="tech-stack">Python | Lambda | S3 | Redshift</p>
+                        <p>Arquitectura serverless para ingesta de datos en tiempo real. Procesamiento de logs y carga
+                            automática en Data Warehouse.</p>
+                        <a href="#" class="btn-link">Ver Código <i class="fab fa-github"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Análisis de Datos Masivos</h3>
+                        <p class="tech-stack">Apache Spark | Databricks | Power BI</p>
+                        <p>Procesamiento de 5TB de datos históricos para modelado predictivo de ventas. Optimización de
+                            consultas SQL en un 40%.</p>
+                        <a href="#" class="btn-link">Ver Caso de Estudio <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Migración de Datos On-Premise</h3>
+                        <p class="tech-stack">DBT | Snowflake | Airflow</p>
+                        <p>Migración completa de base de datos Oracle a la nube utilizando Airflow para orquestar las
+                            tareas de transformación.</p>
+                        <a href="#" class="btn-link">Ver Código <i class="fab fa-github"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container section">
+        <h2 class="section-title">Hablemos</h2>
+        <p style="text-align: center; margin-bottom: 2rem;">¿Tienes un desafío de datos? Estoy disponible para nuevas
+            oportunidades.</p>
+        <div class="contact-wrapper">
+            <a href="mailto:tuemail@ejemplo.com" class="contact-item">
+                <i class="fas fa-envelope"></i> tuemail@ejemplo.com
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="contact-item">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com" target="_blank" class="contact-item">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tu Nombre. Construido con código limpio.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
